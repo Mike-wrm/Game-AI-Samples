@@ -17,9 +17,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
 
-public class COMP452_A2_Q1 implements GLEventListener {
+public class A_Star implements GLEventListener {
 	// Drawing constants:
-	public static final String WINDOW_TITLE = "COMP452 A2 Q1"; 
+	public static final String WINDOW_TITLE = "A_Star"; 
 	public static final int INITIAL_WIDTH = 1000;// [px]
 	public static final int INITIAL_HEIGHT = 1000;// [px]
 	static final long FPS = 60;// How often should the game be re-drawn? [Hz] 

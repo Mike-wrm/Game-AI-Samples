@@ -1,6 +1,6 @@
 /* MathUtil.java
  *
- * @author			Michael McMahon, 7767398
+ * @author			Michael McMahon
  * @version			Jul 31, 2017 			
  *
  * PURPOSE: Contains various physics and math utilities

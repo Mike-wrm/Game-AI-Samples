@@ -1,6 +1,6 @@
 /* GameObject.java
  *
- * @author			Michael McMahon, 7767398
+ * @author			Michael McMahon
  *
  * PURPOSE: All graphical objects that can be placed on the game grid are GameObjects
  * (e.g. Actors, Terrain, etc.) */

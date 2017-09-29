@@ -1,6 +1,6 @@
 /* Actor.java
  *
- * @author			Michael McMahon, 7767398
+ * @author			Michael McMahon
  *
  * PURPOSE: This file contains all code relevant to both playable and non-playable characters */
 
@@ -88,18 +88,18 @@ class NPC extends Actor
 					linVelocity.getComponents()[1] * deltaT};
 			
 			// Update horizontal position:
-			if (getPosition()[0] + deltaD[0] + COMP452_A1.ACTOR_SCALE >= COMP452_A1.INITIAL_WIDTH)// NPC at right border
-				getObj().trans.x = COMP452_A1.INITIAL_WIDTH - COMP452_A1.ACTOR_SCALE;
-			else if (getPosition()[0] + deltaD[0] - COMP452_A1.ACTOR_SCALE <= 0)// NPC at left border
-				getObj().trans.x = 0 + COMP452_A1.ACTOR_SCALE;
+			if (getPosition()[0] + deltaD[0] + Steering_Behaviors.ACTOR_SCALE >= Steering_Behaviors.INITIAL_WIDTH)// NPC at right border
+				getObj().trans.x = Steering_Behaviors.INITIAL_WIDTH - Steering_Behaviors.ACTOR_SCALE;
+			else if (getPosition()[0] + deltaD[0] - Steering_Behaviors.ACTOR_SCALE <= 0)// NPC at left border
+				getObj().trans.x = 0 + Steering_Behaviors.ACTOR_SCALE;
 			else
 				getObj().trans.x += deltaD[0];
 			
 			// Update vertical position:
-			if (getPosition()[1] + deltaD[1] + COMP452_A1.ACTOR_SCALE >= COMP452_A1.INITIAL_HEIGHT)// NPC at top border
-				getObj().trans.y = COMP452_A1.INITIAL_HEIGHT - COMP452_A1.ACTOR_SCALE;
-			else if (getPosition()[1] + deltaD[1] - COMP452_A1.ACTOR_SCALE <= 0)// NPC at bottom border
-				getObj().trans.y = 0 + COMP452_A1.ACTOR_SCALE;
+			if (getPosition()[1] + deltaD[1] + Steering_Behaviors.ACTOR_SCALE >= Steering_Behaviors.INITIAL_HEIGHT)// NPC at top border
+				getObj().trans.y = Steering_Behaviors.INITIAL_HEIGHT - Steering_Behaviors.ACTOR_SCALE;
+			else if (getPosition()[1] + deltaD[1] - Steering_Behaviors.ACTOR_SCALE <= 0)// NPC at bottom border
+				getObj().trans.y = 0 + Steering_Behaviors.ACTOR_SCALE;
 			else
 				getObj().trans.y += deltaD[1];
 			

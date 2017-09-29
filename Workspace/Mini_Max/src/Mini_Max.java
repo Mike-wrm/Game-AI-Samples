@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class COMP452_A3 implements GLEventListener, MouseListener{
+public class Mini_Max implements GLEventListener, MouseListener{
 	// Game constants:
 	public static final int NUM_COLS = 7;// 7
 	public static final int NUM_ROWS = 6;// 6

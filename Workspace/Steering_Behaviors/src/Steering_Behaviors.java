@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class COMP452_A1 implements GLEventListener, KeyListener, MouseListener, MouseMotionListener{
+public class Steering_Behaviors implements GLEventListener, KeyListener, MouseListener, MouseMotionListener{
 	// Graphical constants:
 	public static final String WINDOW_TITLE = "COMP452 A1"; 
 	public static final int INITIAL_WIDTH = 1000;// [px]

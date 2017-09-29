@@ -1,6 +1,6 @@
-/* GraphicsUtilities.java
+/* GraphicsUtil.java
  *
- * @author			Michael McMahon, 7767398
+ * @author			Michael McMahon
  * @version			Jul 31, 2017 	
  *
  * PURPOSE: Contains core graphics utilities and classes
@@ -452,7 +452,7 @@ class Obj// i.e. geometrical object: a collection of Shape Objects
 		assert (trans != null && shapes != null);
 		if (trans != null && shapes != null)
 		{
-			String result = "Position: (" + trans.x + ", " + trans.y + "); Rotation: " + trans.theta + "�; Scale: [" + trans.sx + " " + trans.sy + "]\n";
+			String result = "Position: (" + trans.x + ", " + trans.y + "); Rotation: " + trans.theta + "�ｿｽ; Scale: [" + trans.sx + " " + trans.sy + "]\n";
 			
 			result += "Object Geometry (object coordinates):\n";
 			for (int i = 0; i < shapes.size(); i++)

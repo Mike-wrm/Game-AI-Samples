@@ -1,6 +1,6 @@
 /* Pathfinding.java
  *
- * @author			Michael McMahon, 7767398
+ * @author			Michael McMahon
  *
  * PURPOSE: This file contains all code concerning pathfinding; although not ideal,
  * graphical code has been included in this file which allows the user to view the progress
@@ -27,8 +27,8 @@ public abstract class Pathfinding {
 				currNode = findBestNode(openNodes, goal);// Pick the most promising node
 				
 				ArrayList<Obj> currScene = createScene(currNode, // Create new scene
-						COMP452_A2_Q1.squareShape, COMP452_A2_Q1.CURR_CELL, new ArrayList<Obj>());
-				COMP452_A2_Q1.scenes.add(currScene);// Enqueue scene
+						A_Star.squareShape, A_Star.CURR_CELL, new ArrayList<Obj>());
+				A_Star.scenes.add(currScene);// Enqueue scene
 		
 				if (currNode == goal)// We're there
 					break;
@@ -41,8 +41,8 @@ public abstract class Pathfinding {
 						if (neighbor != null)// Skip blocked neighbors
 						{
 							ArrayList<Obj> neighborScene = createScene(neighbor,// Base new scene off of currScene
-									COMP452_A2_Q1.squareShape, COMP452_A2_Q1.NEIGHBOR, currScene);
-							COMP452_A2_Q1.scenes.add(neighborScene);// Enqueue neighborScene
+									A_Star.squareShape, A_Star.NEIGHBOR, currScene);
+							A_Star.scenes.add(neighborScene);// Enqueue neighborScene
 							
 							double newGValue = currNode.getGValue() + neighbor.getCost();// New gValue for neighbor
 							
@@ -127,10 +127,10 @@ public abstract class Pathfinding {
 	 * Input: @pararm cellShape		The dimensions of a cell in world coordinates
 	 * 			  @param node				The node of intrest (can be the current node, or a neighbor)
 	 * 			  @pararm colour			The colour to be applied to the cell 
-	 * 			  @param scene				The scene to be modified and enqueued to COMP452_A2_Q1.scenes
+	 * 			  @param scene				The scene to be modified and enqueued to A_Star.scenes
 	 */
 	{
-		float[] cellSize = COMP452_A2_Q1.cellSize;
+		float[] cellSize = A_Star.cellSize;
 		ArrayList<Shape> shapes = new ArrayList<Shape>();
 		shapes.add(cellShape.clone());
 		Obj cell = new Obj(shapes);
@@ -141,7 +141,7 @@ public abstract class Pathfinding {
 		cell.trans.sx = cellSize[0]/2;
 		cell.trans.sy = cellSize[1]/2;
 		cell.trans.x = (node.getPosition()[1] * cellSize[0]) + cellSize[0]/2;
-		cell.trans.y = ((COMP452_A2_Q1.numRows - 1 - node.getPosition()[0]) * cellSize[1]) + (cellSize[1]/2);
+		cell.trans.y = ((A_Star.numRows - 1 - node.getPosition()[0]) * cellSize[1]) + (cellSize[1]/2);
 		
 		// Create and return a new scene (modified from baseScene):
 		ArrayList<Obj> newScene = cloneScene(baseScene);
