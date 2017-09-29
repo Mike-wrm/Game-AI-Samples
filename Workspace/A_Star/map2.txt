@@ -1,0 +1,17 @@
+16 16 0 0 15 15
+s s g o b g s g o o o g o s s s 
+o g s s g o g b o b g o o s g b 
+b b g s b s g g o s o b g g g b 
+s g b g s b o o o g g o g s b o 
+s b o s g b s g o b o b s s o g 
+g s g s s b s b s s b g g b s s 
+g g s g o b b o s o g s s s b s 
+g g b b o o g s g o o s s s g s 
+b s b b s s o o g s s b b o b g 
+s b b o b b b s s b s b b s g s 
+o o o o s o b s o s s b b g s s 
+g g g b g g o o s s o o b o g b 
+s o g b b s s b o b g g g s o b 
+s s s b g s s g b s o b b s s g 
+o s s s b o o g g o g g o b g o 
+s b s o g o o s b o g b o b o g 
